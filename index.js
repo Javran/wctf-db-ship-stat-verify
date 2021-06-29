@@ -22,7 +22,7 @@ const main = async () => {
   let $ships
   let shipStatReport
   try {
-    const statRes = await fetch('https://poi.0u0.moe/dump/ship-stat.json', fetchOptions)
+    const statRes = await fetch('https://api.poi.moe/dump/ship-stat.json', fetchOptions)
     const statText = await statRes.text()
     stat = parseDB(statText)
 
